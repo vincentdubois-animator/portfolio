@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+
+.slider{
+    widht:100%;
+    min-height:80vh;
+    aspect-ratio:16/9;         /*Ratio de la Slide*/
+    background:#000;         /*Couleur de la Slide*/
+    position:relative;         /*Position relative de la Slide par rapport à la dimension de la fenêtre de la page Web*/
+}
+
+.slider-background{
+    width:100%;                 /*L'image occupe 100% de la Largeur de la page*/
+    height:100%;                /*L'image occupe 100% de la Hauteur de la page*/
+    object-fit: cover;          /*L'image rempli proportionnelement la largeur de la page*/
+    filter:brightness(80%);     /*% de l'opacité de l'image d'arrière fond*/
+}
+
+.slider-content{
+    position:absolute;                 /*Position de la Slide*/
+    top:70%;                           /*Position de la Slide à 70% du haut*/
+    left:50%;                          /*Position de la Slide à 50% de la gauche*/
+    transform:translate(-50%, -50%);   /*Position du contenu de la Slide*/
+    text-align:center;                 /*Aligner les textes au centre*/         
+}
+
+h1{
+    color: #ffffff;   /*Couleur du Titre h1*/
+    font-size:5rem;     /*Taille du Titre h1*/
+}
+
+h2{
+    font-size:3rem;      /*Taille du Titre h2*/
+    margin-bottom: 50px; /*ajout d'une bordue de 20 pixel en dessou du Titre h2*/
+}
+
+p{
+    font-size:1.5rem;   /*Taille du paragraphe p = 1.5*/
+    line-height:1.5em;  /*Espacement entre les lignes du paragraphe p = 1.5*/
+}
+
+
+.slider-content p{
+    color:#fff;       /*Couleur du paragraphe*/
+    font-size: 2rem;    /*Taille du paragraphe */
+    font-weight:300;    /*Epaisseur des lettres du paragraphe*/
+}
+
+.section{
+    padding:100px 0;    /*Marche entre la Slide et le Texte*/
+}
+
+.boxed{                  /*Format adapté pour tout support (PC,Mac...)*/
+    max-width:1280px;
+    margin-inline:auto;
+}
+
+.flex{                 /*Mettre le Paragraphe p à côté du titre du paragraphe h2*/    
+    display:flex;
+}
+
+.dark{
+    background:#000;
+    color:#fff;
+}
+
+.grey{
+    background:#2e2e2e;
+    color:#fff;
+}
+
+.w40{                  /*En étant à 40% de la marge de la page*/
+    width:40%;
+}
+
+.w60{                  /*En prenant 60% de la marge de la page*/
+    width:60%;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.w12{
+    width:12.5%;     /*La somme par laquelle est divisé 100% de la largeur de la page*/
+}
+
+.w14{
+    width:14.2%;     /*La somme par laquelle est divisé 100% de la largeur de la page*/
+}
+
+.w32{
+    width:32%;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.gap20{            /*Espacement en pixel entre les éléments dans la section*/
+    gap:20px;
+}
+
+.gap50{
+    gap:50px;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.competence{
+    background:#000000;    /*Couleur de la fenêtre de fond de l'icône*/
+    border-radius:15px;    /*Arrondissement des coins de fond*/
+    padding:20px;          /*Mettre une marge autour de l'icône*/
+    box-sizing:border-box; /*Recentre l'icône dans le fond*/
+}   
+
+.img-competence{   /*Les images icônes des logiciels*/        
+    width: 100px; 
+    height: auto;  /* garde le ratio d'aspect */
+}
+
+
+.parcours{
+    border-radius:15px;    /*Arrondissement des coins de fond*/
+    box-sizing: border-box; /*Recentre l'icône dans le fond*/ 
+}   
+
+.img-parcours{     
+    width: auto; 
+    height: 70px; 
+}
+
+.img-contact{   /*Les images icônes des logiciels*/        
+    width: 50px; 
+    height: auto;  /* garde le ratio d'aspect */
+}
+
+.projet{                 /*Block de Projet*/  
+    height:auto;         /*Hauteur du block automatique*/
+    aspect-ratio:auto;   /*Ratio en automatique ou 1/1*/
+    position: relative;
+}
+
+.projet h3{                 /*Position du texte pour les projets*/
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size:2rem;
+    /*width:max-content ;   /*Le texte s'aligne sur tout le block*/
+    opacity: 0;
+    transition:.4s ease;    /*Transition de l'opacité = 0.4sec*/
+}
+
+.projet a{               /*Block pour cliquer sur la page*/
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration: none;  /*Pas de coloration automatique sur le block*/
+    color: #fff;          /*Couleur du block = blanc*/
+}
+
+.projet img{                    /*Image du Block Projet*/
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    filter: brightness(90%);
+    transition:.4s ease;       /*Transition de l'opacité = 0.4sec*/
+    
+}
+
+.projet:hover img{             /*Quand on survolage l'image du projet avec la souris*/
+    filter:brightness(30%);    /*L'opacité de l'image revient à 60%, l'image s'éclaircit*/
+}
+
+.projet:hover h3{            /*Quand on survolage le texte du projet avec la souris*/
+    opacity: 1;              /*Le texte s'affiche*/
+}
+
+.icon{                           /*paramettres pour les icons */
+    display: block;
+    font-size: 40px !important;
+}
+
+.label{                         /*Paramettres de nom du TYPE de "contact*/ 
+    display: block;
+    font-weight:700;            /*Epaisseur du texte*/
+    text-transform: uppercase;  /*Police du texte en MAJUSCULE */
+    margin: 10px 0;
+    font-size: 1.5rem;          /*Taille du texte*/
+}
+
+.value{                         /*Paramettre du text */
+    display: block;
+    font-size: 1.5rem;
+}
+
+.contact{
+    border: 2px dashed #fff;   /*Encadrement en pointillé d'une épaisseur de 2px*/
+    border-radius: 15px;         /*Bord des encadrements sont arrondis*/
+    padding: 30px;               /*Marge entre l'encadrement et le contenu*/
+    box-sizing: border-box;      /*Espacement entre les encadrements*/
+}
+
+.video{
+    width: 100%;      /* Rend la vidéo responsive */
+    max-width: 600px; /* Limite la largeur maximale à 600px */
+    border-radius: 10px; /* Arrondit les coins de la vidéo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
+
+}
