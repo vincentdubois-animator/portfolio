@@ -46,6 +46,10 @@ h2{
     margin-bottom: 50px; /*ajout d'une bordue de 20 pixel en dessou du Titre h2*/
 }
 
+.texte-logiciel{
+    margin-top: 20px;
+}
+
 p{
     font-size:1.5rem;   /*Taille du paragraphe p = 1.5*/
     line-height:1.5em;  /*Espacement entre les lignes du paragraphe p = 1.5*/
@@ -111,10 +115,12 @@ p{
 
 .gap20{            /*Espacement en pixel entre les éléments dans la section*/
     gap:20px;
+    margin-top: 100px;
 }
 
 .gap50{
     gap:50px;
+    margin-top: 150px;
 }
 
 .wrap{
@@ -214,12 +220,4 @@ p{
     border-radius: 15px;         /*Bord des encadrements sont arrondis*/
     padding: 30px;               /*Marge entre l'encadrement et le contenu*/
     box-sizing: border-box;      /*Espacement entre les encadrements*/
-}
-
-.video{
-    width: 100%;      /* Rend la vidéo responsive */
-    max-width: 600px; /* Limite la largeur maximale à 600px */
-    border-radius: 10px; /* Arrondit les coins de la vidéo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
-
 }
