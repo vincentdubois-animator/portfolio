@@ -85,18 +85,6 @@ p{
     color:#fff;
 }
 
-.w40{                  /*En étant à 40% de la marge de la page*/
-    width:40%;
-}
-
-.w60{                  /*En prenant 60% de la marge de la page*/
-    width:60%;
-}
-
-.text-center{
-    text-align:center;
-}
-
 .w12{
     width:12.5%;     /*La somme par laquelle est divisé 100% de la largeur de la page*/
 }
@@ -107,6 +95,18 @@ p{
 
 .w32{
     width:32%;
+}
+
+.w40{                  /*En étant à 40% de la marge de la page*/
+    width:40%;
+}
+
+.w60{                  /*En prenant 60% de la marge de la page*/
+    width:60%;
+}
+
+.text-center{
+    text-align:center;
 }
 
 .space-between{
@@ -127,6 +127,40 @@ p{
     flex-wrap: wrap;         /*Sert à passer les lignes ?*/
 }
 
+.profile{
+    margin-left: 0px; /* Décale l'image de 100px vers la droite */
+}
+
+.img-profile{   /*Ma photo de profile*/        
+    width: 300px; 
+    height: auto;  /* garde le ratio d'aspect */
+    margin-top: 50px;
+}
+
+/* Style du bouton */
+.cv-button {
+    background-color: #ad0000; /* Couleur de fond verte */
+    border: none; /* Pas de bordure */
+    color: white; /* Couleur du texte */
+    padding: 15px 32px; /* Espacement interne */
+    text-align: center; /* Alignement du texte */
+    text-decoration: none; /* Retirer la sous-ligne */
+    display: inline-block; /* Laisser le bouton dans le flux du document */
+    font-size: 30px; /* Taille du texte */
+    margin-top: 150px;
+    margin-left: 100px;
+    cursor: pointer; /* Changer le curseur quand survolé */
+    border-radius: 8px; /* Coins arrondis */
+    transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 100)
+}
+
+/* Effet survol */
+.cv-button:hover {
+    background-color: #ff2525; /* Couleur légèrement plus foncée au survol */
+}
+
+
 .competence{
     background:#000000;    /*Couleur de la fenêtre de fond de l'icône*/
     border-radius:15px;    /*Arrondissement des coins de fond*/
@@ -139,21 +173,6 @@ p{
     height: auto;  /* garde le ratio d'aspect */
 }
 
-
-.parcours{
-    border-radius:15px;    /*Arrondissement des coins de fond*/
-    box-sizing: border-box; /*Recentre l'icône dans le fond*/ 
-}   
-
-.img-parcours{     
-    width: auto; 
-    height: 70px; 
-}
-
-.img-contact{   /*Les images icônes des logiciels*/        
-    width: 50px; 
-    height: auto;  /* garde le ratio d'aspect */
-}
 
 .projet{                 /*Block de Projet*/  
     height:auto;         /*Hauteur du block automatique*/
@@ -191,15 +210,32 @@ p{
 
 .projet:hover img{             /*Quand on survolage l'image du projet avec la souris*/
     filter:brightness(30%);    /*L'opacité de l'image revient à 60%, l'image s'éclaircit*/
+    cursor: pointer; /* Changer le curseur quand survolé */
 }
 
 .projet:hover h3{            /*Quand on survolage le texte du projet avec la souris*/
     opacity: 1;              /*Le texte s'affiche*/
 }
 
-.icon{                           /*paramettres pour les icons */
+.parcours{
+    border-radius:15px;    /*Arrondissement des coins de fond*/
+    box-sizing: border-box; /*Recentre l'icône dans le fond*/ 
+}   
+
+.img-parcours{     
+    width: auto; 
+    height: 70px;
+}
+
+.icon{                           /*paramettres pour les icons dans la partie "Contact" */
     display: block;
     font-size: 40px !important;
+    margin-bottom: 20px;
+}
+
+.img-contact{                    /*Les images icônes de la partie "Contacte"*/        
+    width: 50px; 
+    height: auto;              
 }
 
 .label{                         /*Paramettres de nom du TYPE de "contact*/ 
@@ -235,6 +271,10 @@ p{
 
 
 
+.image-slide {
+    margin-left: 100px; /* Décale l'image de 100px vers la droite */
+}
+
 .slider-Projet{                /*BACKGROUND*/
     width:100%;
     min-height:80vh;
@@ -248,7 +288,7 @@ p{
     height:100%;                /*L'image occupe 100% de la Hauteur de la page*/
     object-fit: cover;          /*L'image rempli proportionnelement la largeur de la page*/
     filter:brightness(40%);     /*% de l'opacité de l'image d'arrière fond*/
-
+    
 }
 
 .slider-content-Projet{                /*Slide du TEXTE*/
@@ -267,7 +307,7 @@ p{
 
 
 .mb{
-    margin-bottom: 350px; /*ajout d'une bordue de 20 pixel en dessou du Ttexte
+    margin-bottom: 350px; /*ajout d'une bordue de 20 pixel en dessou du Ttexte*/
 }
 
 
@@ -318,7 +358,7 @@ p{
     width: 100%;
     height: auto;
     border-radius: 5px; /* Coins arrondis des images */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère sous chaque image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Ombre légère sous chaque image */
     transition: transform 0.3s ease;
 }
 
@@ -336,7 +376,7 @@ p{
 }
 
 .mt-gallery{
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 .mb-gallery{
@@ -344,55 +384,9 @@ p{
 }
 
 .text-catégories-concepts{   /*Texte des catégories de concept*/
-    color: #000000;   /*Couleur du Titre h1*/
+    color: #ffffff;   /*Couleur du Titre h1*/
     font-size:1.5rem;   /*Taille du paragraphe p = 1.5*/
     line-height:1.5em;  /*Espacement entre les lignes du paragraphe p = 1.5*/
     letter-spacing: 2px;
     text-align:left;  
-}
-
-
-
-
-
-
-
-.container {
-    position: relative;
-}
-
-.clickable-image {
-    width: 300px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.fullscreen {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    height: auto;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    opacity: 1;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 999;
-    opacity: 1;
-    visibility: visible;
-    transition: visibility 0s, opacity 0.3s ease;
-}
-
-.hidden {
-    opacity: 0;
-    visibility: hidden;
 }
