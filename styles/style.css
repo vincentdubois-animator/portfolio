@@ -85,6 +85,21 @@ p{
     color:#fff;
 }
 
+.blue{
+    background:#1e294e;
+    color:#fff;
+}
+
+.orange{
+    background:#000;
+    color:#fff;
+}
+
+.beige{
+    background:#6e5d44;
+    color:#fff;
+}
+
 .w12{
     width:12.5%;     /*La somme par laquelle est divisé 100% de la largeur de la page*/
 }
@@ -122,20 +137,22 @@ p{
     gap:50px;
     margin-top: 150px;
 }
+.gap100{
+    gap: 200px;
+}
 
 .wrap{
     flex-wrap: wrap;         /*Sert à passer les lignes ?*/
 }
 
-.profile{
-    margin-left: 0px; /* Décale l'image de 100px vers la droite */
-}
 
 .img-profile{   /*Ma photo de profile*/        
     width: 300px; 
     height: auto;  /* garde le ratio d'aspect */
     margin-top: 50px;
 }
+
+
 
 /* Style du bouton */
 .cv-button {
@@ -300,7 +317,6 @@ p{
 }
 
 
-
 .mt{
     margin-top: 60px;
 }
@@ -308,6 +324,10 @@ p{
 
 .mb{
     margin-bottom: 350px; /*ajout d'une bordue de 20 pixel en dessou du Ttexte*/
+}
+
+.ml{
+    margin-left: 70px;
 }
 
 
@@ -355,6 +375,7 @@ p{
 
 /* Style pour les images */
 .gallery img {
+    vertical-align: middle;
     width: 100%;
     height: auto;
     border-radius: 5px; /* Coins arrondis des images */
@@ -389,4 +410,37 @@ p{
     line-height:1.5em;  /*Espacement entre les lignes du paragraphe p = 1.5*/
     letter-spacing: 2px;
     text-align:left;  
+}
+
+.photo-equipe-UBBDR{   /*Ma photo de profile*/        
+    width: 300px; 
+    height: auto;  /* garde le ratio d'aspect */
+    margin-top: 20px;
+}
+
+.Prenom-equipe-UBBDR{
+    color: #ffffff;   /*Couleur du Titre h1*/
+    font-size:2rem;     /*Taille du Titre h1*/
+    margin-bottom: 10px;
+}
+
+.icons-equipe-UBBDR{                    /*Les images icônes de la partie "Contacte"*/        
+    width: 40px; 
+    height: auto;
+    margin-top: 10px;
+}
+
+.gap20-equipe-UBBDR{            /*Espacement en pixel entre les éléments dans la section*/
+    gap:20px;
+}
+
+.lien-equipe_UBBDR{                         /*Paramettre du text */
+    display: block;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.container-UBBDR{
+    display: flex; /* Activer le mode flexbox */
+    justify-content: center; /* Aligner les éléments horizontalement */  
 }
