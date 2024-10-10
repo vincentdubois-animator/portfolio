@@ -95,8 +95,8 @@ p{
     color:#fff;
 }
 
-.beige{
-    background:#6e5d44;
+.vert{
+    background:#414d3b;
     color:#fff;
 }
 
@@ -442,5 +442,5 @@ p{
 
 .container-UBBDR{
     display: flex; /* Activer le mode flexbox */
-    justify-content: center; /* Aligner les éléments horizontalement */  
+    justify-content: left; /* Aligner les éléments horizontalement */  
 }
