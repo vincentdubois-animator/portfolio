@@ -80,24 +80,31 @@ p{
     color:#fff;
 }
 
+.grey-uni{
+    color:#ffffff;
+    background: #424242;
+}
+
 .grey{
-    background:#2e2e2e;
     color:#fff;
+    background: linear-gradient(to right, #000000, #424242, #838383, #838383, #424242, #000000); /* Dégradé noir sur les côtés et rouge au milieu */
 }
 
 .blue{
-    background:#1e294e;
     color:#fff;
+    background: linear-gradient(to right, #000000, #284091,rgb(62, 105, 197), #284091, #000000); /* Dégradé noir sur les côtés et couleur au milieu */
 }
 
 .orange{
-    background:#000;
+
     color:#fff;
+    background: linear-gradient(to right, #000000, #742d20, #742d20, #000000); /* Dégradé noir sur les côtés et rouge au milieu */
 }
 
 .vert{
     background:#414d3b;
     color:#fff;
+    background: linear-gradient(to right, #000000, #414d3b,#828b69, #414d3b, #000000); /* Dégradé noir sur les côtés et couleur au milieu */
 }
 
 .w12{
@@ -444,3 +451,6 @@ p{
     display: flex; /* Activer le mode flexbox */
     justify-content: left; /* Aligner les éléments horizontalement */  
 }
+
+
+
