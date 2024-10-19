@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Appel</title>
+    <title>Démerde toi !</title>
     <meta type="description" content="Animation Vincent Dubois Projet Plasmo" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/style.css" type="text/css">
@@ -55,35 +55,42 @@
  
             <p class="text-catégories-concepts mt-gallery mb-gallery">Storyboard</p>
             <div class="gallery container">
-                <img src="../img/Demerde_toi_Story_p1.png"      alt="Image 1">
-                <img src="../img/Demerde_toi_Story_p2.png"      alt="Image 2">
-                <img src="../img/Demerde_toi_Story_p3.png"      alt="Image 3">
-                <img src="../img/Demerde_toi_Story_p4.png"      alt="Image 4">
-                <img src="../img/Demerde_toi_Story_p5.png"      alt="Image 5">
-                <img src="../img/Demerde_toi_Story_p6.png"      alt="Image 6">
-                <img src="../img/Demerde_toi_Story_p7.png"      alt="Image 7">
-                <img src="../img/Demerde_toi_Story_p8.png"      alt="Image 8">
+                <img class="clickableImage" src="../img/Demerde_toi_Story_p1.png" style="cursor: pointer;" alt="Image 1">
+                <img class="clickableImage" src="../img/Demerde_toi_Story_p2.png" style="cursor: pointer;" alt="Image 2">
+                <img class="clickableImage" src="../img/Demerde_toi_Story_p3.png" style="cursor: pointer;" alt="Image 3">
+                <img class="clickableImage" src="../img/Demerde_toi_Story_p4.png" style="cursor: pointer;" alt="Image 4">
+                <img class="clickableImage" src="../img/Demerde_toi_Story_p5.png" style="cursor: pointer;" alt="Image 5">
+                <img class="clickableImage" src="../img/Demerde_toi_Story_p6.png" style="cursor: pointer;" alt="Image 6">
+                <img class="clickableImage" src="../img/Demerde_toi_Story_p7.png" style="cursor: pointer;" alt="Image 7">
+                <img class="clickableImage" src="../img/Demerde_toi_Story_p8.png" style="cursor: pointer;" alt="Image 8">
+                
+                <div id="overlay" style="display:none;">
+                    <img id="enlargedImage" class="enlarge">
+                </div>
             </div>
+            
 
 
 
             <p class="text-catégories-concepts mt-gallery mb-gallery">Behind the Scene</p>
             <div class="gallery">
-                <img src="../img/Demerde_toi_photo_1.jpg"       alt="Image 9">
-                <img src="../img/Demerde_toi_photo_2.jpg"       alt="Image 10">
-                <img src="../img/Demerde_toi_photo_3.jpg"       alt="Image 11">
-                <img src="../img/Demerde_toi_photo_4.jpg"       alt="Image 12">
-                <img src="../img/Demerde_toi_photo_5.jpg"       alt="Image 13">
-                <img src="../img/Demerde_toi_photo_6.jpg"       alt="Image 14">
-                <img src="../img/affiche_demerde_toi.png"       alt="Image 15">
+                <img class="clickableImage" src="../img/Demerde_toi_photo_1.jpg" style="cursor: pointer;" alt="Image 9">
+                <img class="clickableImage" src="../img/Demerde_toi_photo_2.jpg" style="cursor: pointer;" alt="Image 10">
+                <img class="clickableImage" src="../img/Demerde_toi_photo_3.jpg" style="cursor: pointer;" alt="Image 11">
+                <img class="clickableImage" src="../img/Demerde_toi_photo_4.jpg" style="cursor: pointer;" alt="Image 12">
+                <img class="clickableImage" src="../img/Demerde_toi_photo_5.jpg" style="cursor: pointer;" alt="Image 13">
+                <img class="clickableImage" src="../img/Demerde_toi_photo_6.jpg" style="cursor: pointer;" alt="Image 14">
+                <img class="clickableImage" src="../img/affiche_demerde_toi.png" style="cursor: pointer;" alt="Image 15">
 
-
+                <div id="overlay" style="display:none;">
+                    <img id="enlargedImage" class="enlarge">
+                </div>
             </div>
             
         </div>
     </div>
 
-
+    <script src="../js/app.js"></script>
 </body>
 
 </html>

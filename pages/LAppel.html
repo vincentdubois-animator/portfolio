@@ -14,12 +14,12 @@
 <body>
     
     <div class="slider-Projet">
-        <img src="../img/Lappel-entete.png" class="slider-background-Projet ">
+        <img src="../img/Lappel-entete.png" class="slider-background-Projet">
         <div class="slider-content-Projet">
             <h1 class="Titre-Projet">L'Appel</h1>
             <p class="Resume-Projet mt"> Une jeune adolescente accro au réseaux sociaux, se promène chez elle avec son smartphone. <br/> Soudain, des bruits de notifications venant d’ailleurs que de son portable, l’intrigue. <br/> Attirée par ces étranges son résonnant, elle décide d’en trouver la cause. Quelque chose l’appelle !</p>
             <p class="Resume-Projet mt">Court Métrage réalisé en 2020 dans le cadre scolaire du département Images Animées Waide Somme </p>
-            <p class="Details-Projet mt">Réalisation, scénarios, storyboard, modélisation, textures et animations : Vincent Dubois </p>
+            <p class="Details-Projet mb-entete mt">Réalisation, scénarios, storyboard, modélisation, textures et animations : Vincent Dubois </p>
         </div>
     </div>
 
@@ -55,23 +55,31 @@
  
             <p class="text-catégories-concepts mt-gallery mb-gallery">Recherches Personnages</p>
             <div class="gallery container">
-                <img src="../img/Jenny-0-Concept.jpg"             alt="Image 1">
-                <img src="../img/Jenny-1-Morpho.jpg"              alt="Image 2">
-                <img src="../img/Jenny-2-Chara.jpg"               alt="Image 3">
-                <img src="../img/Jenny-3-Color.jpg"               alt="Image 4">
-                <img src="../img/Jenny-4-Cheuveux-Styles.png"     alt="Image 5">
-                <img src="../img/Jenny-5-Turn.png"                alt="Image 6">
+                <img class="clickableImage" src="../img/Jenny-0-Concept.jpg"         style="cursor: pointer;" alt="Image 1">
+                <img class="clickableImage" src="../img/Jenny-1-Morpho.jpg"          style="cursor: pointer;" alt="Image 2">
+                <img class="clickableImage" src="../img/Jenny-2-Chara.jpg"           style="cursor: pointer;" alt="Image 3">
+                <img class="clickableImage" src="../img/Jenny-3-Color.jpg"           style="cursor: pointer;" alt="Image 4">
+                <img class="clickableImage" src="../img/Jenny-4-Cheuveux-Styles.png" style="cursor: pointer;" alt="Image 5">
+                <img class="clickableImage" src="../img/Jenny-5-Turn.png"            style="cursor: pointer;" alt="Image 6">
                 
+
+                <div id="overlay" style="display:none;">
+                    <img id="enlargedImage" class="enlarge">
+                </div>
             </div>
 
 
 
             <p class="text-catégories-concepts mt-gallery mb-gallery">Recherches Decors</p>
             <div class="gallery">
-                <img src="../img/Decor-1-Arbre-Concept.jpg"   alt="Image 7">
-                <img src="../img/Decor-2-Arbres-Designs.jpg"  alt="Image 8">
-                <img src="../img/Decor-3-Couloir.jpg"         alt="Image 9">
-                <img src="../img/Decor-4-Couloir_Piece.jpg"   alt="Image 10">
+                <img class="clickableImage" src="../img/Decor-1-Arbre-Concept.jpg"   style="cursor: pointer;" alt="Image 7">
+                <img class="clickableImage" src="../img/Decor-2-Arbres-Designs.jpg"  style="cursor: pointer;" alt="Image 8">
+                <img class="clickableImage" src="../img/Decor-3-Couloir.jpg"         style="cursor: pointer;" alt="Image 9">
+                <img class="clickableImage" src="../img/Decor-4-Couloir_Piece.jpg"   style="cursor: pointer;" alt="Image 10">
+
+                <div id="overlay" style="display:none;">
+                    <img id="enlargedImage" class="enlarge">
+                </div>
             </div>
 
 
@@ -79,23 +87,27 @@
 
             <p class="text-catégories-concepts mt-gallery mb-gallery">Storyboard</p>
             <div class="gallery">
-                <img src="../img/Story-Lappel_1.jpg"   alt="Image 11">
-                <img src="../img/Story-Lappel_2.png"   alt="Image 12">
-                <img src="../img/Story-Lappel_3.jpg"   alt="Image 13">
-                <img src="../img/Story-Lappel_4.jpg"   alt="Image 14">
-                <img src="../img/Story-Lappel_5.png"   alt="Image 15">
-                <img src="../img/Story-Lappel_6.jpg"   alt="Image 16">
-                <img src="../img/Story-Lappel_7.jpg"   alt="Image 17">
-                <img src="../img/Story-Lappel_8.jpg"   alt="Image 18">
-                <img src="../img/Story-Lappel_9.jpg"   alt="Image 19">
-                <img src="../img/Story-Lappel_10.jpg"   alt="Image 20">
+                <img class="clickableImage" src="../img/Story-Lappel_1.jpg"  style="cursor: pointer;" alt="Image 11">
+                <img class="clickableImage" src="../img/Story-Lappel_2.png"  style="cursor: pointer;" alt="Image 12">
+                <img class="clickableImage" src="../img/Story-Lappel_3.jpg"  style="cursor: pointer;" alt="Image 13">
+                <img class="clickableImage" src="../img/Story-Lappel_4.jpg"  style="cursor: pointer;" alt="Image 14">
+                <img class="clickableImage" src="../img/Story-Lappel_5.png"  style="cursor: pointer;" alt="Image 15">
+                <img class="clickableImage" src="../img/Story-Lappel_6.jpg"  style="cursor: pointer;" alt="Image 16">
+                <img class="clickableImage" src="../img/Story-Lappel_7.jpg"  style="cursor: pointer;" alt="Image 17">
+                <img class="clickableImage" src="../img/Story-Lappel_8.jpg"  style="cursor: pointer;" alt="Image 18">
+                <img class="clickableImage" src="../img/Story-Lappel_9.jpg"  style="cursor: pointer;" alt="Image 19">
+                <img class="clickableImage" src="../img/Story-Lappel_10.jpg" style="cursor: pointer;" alt="Image 20">
+
+                <div id="overlay" style="display:none;">
+                    <img id="enlargedImage" class="enlarge">
+                </div>
                
             </div>
             
         </div>
     </div>
 
-
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
