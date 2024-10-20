@@ -508,8 +508,8 @@ p{
     max-width: 90%;
     max-height: 90%;
     object-fit: contain;  /* Conserve les proportions d'origine */
-    border: 2px solid #ccc;
-    background-color: white;
+    /* border: 2px solid #ccc;
+    background-color: white; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
