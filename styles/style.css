@@ -19,6 +19,7 @@ body{
     aspect-ratio:16/8;         /*Ratio de la Slide*/
     background:#000;         /*Couleur de la Slide*/
     position:relative;         /*Position relative de la Slide par rapport à la dimension de la fenêtre de la page Web*/
+    top: -40px;                /*Decaller le block vers le haut de la page*/
 }
 
 .slider-background{             /*L'image*/
@@ -30,7 +31,7 @@ body{
 
 .slider-content{                       /*Slide du TEXTE*/
     position:absolute;                 /*Position de la Slide*/
-    top:70%;                           /*Position de la Slide à 70% du haut*/
+    top:50%;                           /*Position de la Slide à 70% du haut*/
     left:50%;                          /*Position de la Slide à 50% de la gauche*/
     transform:translate(-50%, -50%);   /*Position du contenu de la Slide*/
     text-align:center;                 /*Aligner les textes au centre*/         
