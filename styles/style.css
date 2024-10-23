@@ -26,7 +26,7 @@ body{
     width:100%;                 /*L'image occupe 100% de la Largeur de la page*/
     height:100%;                /*L'image occupe 100% de la Hauteur de la page*/
     object-fit: cover;          /*L'image rempli proportionnelement la largeur de la page*/
-    filter:brightness(80%);     /*% de l'opacité de l'image d'arrière fond*/
+    filter:brightness(70%);     /*% de l'opacité de l'image d'arrière fond*/
 }
 
 .slider-content{                       /*Slide du TEXTE*/
@@ -131,6 +131,10 @@ p{
     width:20%;
 }
 
+.w23{
+    width: 23%;
+}
+
 .w32{
     width:32%;
 }
@@ -149,6 +153,11 @@ p{
 
 .space-between{
     justify-content: space-between;
+}
+
+.gap10{            /*Espacement en pixel entre les éléments dans la section*/
+    gap:10px;
+    margin-top: 100px;
 }
 
 .gap20{            /*Espacement en pixel entre les éléments dans la section*/
@@ -353,7 +362,7 @@ p{
     left:35%;                          /*Position de la Slide à 50% de la gauche*/
     transform:translate(-50%, -50%);   /*Position du contenu de la Slide*/
     text-align:left;
-                   
+            
 }
 
 
@@ -450,36 +459,36 @@ p{
 }
 
 .text-catégories-concepts{   /*Texte des catégories de concept*/
-    color: #ffffff;   /*Couleur du Titre h1*/
-    font-size:1.5rem;   /*Taille du paragraphe p = 1.5*/
-    line-height:1.5em;  /*Espacement entre les lignes du paragraphe p = 1.5*/
+    color: #ffffff;       /*Couleur du Titre h1*/
+    font-size:1.5rem;        /*Taille du paragraphe p = 1.5*/
+    line-height:1.5em;       /*Espacement entre les lignes du paragraphe p = 1.5*/
     letter-spacing: 2px;
     text-align:left;  
 }
 
 .photo-equipe-UBBDR{   /*Ma photo de profile*/        
     width: 300px; 
-    height: auto;  /* garde le ratio d'aspect */
+    height: auto;      /* garde le ratio d'aspect */
     margin-top: 20px;
 }
 
 .Prenom-equipe-UBBDR{
-    color: #ffffff;   /*Couleur du Titre h1*/
-    font-size:2rem;     /*Taille du Titre h1*/
+    color: #ffffff;     /*Couleur du Titre h1*/
+    font-size:2rem;       /*Taille du Titre h1*/
     margin-bottom: 10px;
 }
 
-.icons-equipe-UBBDR{                    /*Les images icônes de la partie "Contacte"*/        
+.icons-equipe-UBBDR{          /*Les images icônes de la partie "Contacte"*/        
     width: 40px; 
     height: auto;
     margin-top: 10px;
 }
 
-.gap20-equipe-UBBDR{            /*Espacement en pixel entre les éléments dans la section*/
+.gap20-equipe-UBBDR{          /*Espacement en pixel entre les éléments dans la section*/
     gap:20px;
 }
 
-.lien-equipe_UBBDR{                         /*Paramettre du text */
+.lien-equipe_UBBDR{           /*Paramettre du text */
     display: block;
     font-size: 1rem;
     margin-top: 20px;
@@ -492,14 +501,22 @@ p{
     justify-content: left; /* Aligner les éléments horizontalement */  
 }
 
-.slider-background-Demerde-toi{      /*L'iMAGE*/
-    width:100%;                 /*L'image occupe 100% de la Largeur de la page*/
-    height:100%;                /*L'image occupe 100% de la Hauteur de la page*/
-    object-fit: cover;          /*L'image rempli proportionnelement la largeur de la page*/
-    filter:brightness(40%);     /*% de l'opacité de l'image d'arrière fond*/
+.slider-background-Demerde-toi{        /*L'iMAGE*/
+    width:100%;                        /*L'image occupe 100% de la Largeur de la page*/
+    height:100%;                       /*L'image occupe 100% de la Hauteur de la page*/
+    object-fit: cover;                 /*L'image rempli proportionnelement la largeur de la page*/
+    filter:brightness(40%);            /*% de l'opacité de l'image d'arrière fond*/
     translate: bottom(50%);
 }
 
+.slider-background-Animes-Divers{      /*L'iMAGE*/
+    width:100%;                        /*L'image occupe 100% de la Largeur de la page*/
+    height:auto;                       /*L'image occupe 100% de la Hauteur de la page*/
+    object-fit: cover;                 /*L'image rempli proportionnelement la largeur de la page*/
+    filter:brightness(40%);            /*% de l'opacité de l'image d'arrière fond*/
+}
+
+/*Pour agrandir les images lorsqu'on clic dessus*/
 .enlarge {
     position: fixed;
     top: 50%;
@@ -527,4 +544,6 @@ p{
     align-items: center;
     z-index: 999;
 }
+
+
 
