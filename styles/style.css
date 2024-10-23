@@ -249,7 +249,7 @@ p{
     height:100%;
     object-fit: cover;
     filter: brightness(90%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   /* Ombre légère sous chaque image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);   /* Ombre légère sous chaque image */
     transition:.4s ease;                          /*Transition de l'opacité = 0.4sec*/
 }
 
