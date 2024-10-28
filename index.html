@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Vincent Dubois Animator</title>
         <meta type="description" content="Portfolio animation 3d de Vincent Dubois" />
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -11,10 +11,32 @@
 
     </head>
 
-
     <body>
     
-        <div class="slider">
+        <header>
+                <div class="boxed">
+                    <div class="flex aligncenter space-between">
+                        <button onclick="openMenu()" class="header-menu-mobil">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                        <div class="header-logo">
+                            <img src="img/Vincent_Dubois_Animator_Youtube_Logo.png">
+                        </div>
+                        <ul class="header-menu">
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#mes-competences">Compétences</a></li>
+                            <li><a href="#bande-demo">Bande Demo</a></li>
+                            <li><a href="#projets">Projets</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+        </header>
+
+
+
+        <div id= "accueil" class="slider">
             <img src="img/Bannière_Projets_Site_VDA.png" class="slider-background">
             <div class="slider-content">
                 <h1>Vincent DUBOIS</h1>
@@ -26,16 +48,16 @@
 
         <div class="section">
             <div class="boxed">
-                <div class="flex">
-                    <div class="w40">
+                <div class="flex toColumn mCenter">
+                    <div class="w40 wm100">
                         <img class="img-profile w12" src="img/Photo_CV.png"> 
                     </div>
 
-                    <div class="w60">
+                    <div class="w60 wm100">
                         <h2>A propos de moi</h2> <br/> <p>Ayant obtenu mon diplôme DNSEP à l'école d'animation Waide Somme à Amiens,  je recherche activement un poste d'animateur 3D  junior, n'importe où en France et au delà, sur place ou en télétravail. Ma bande démo et mes courts métrages sont visibles ci dessous. <br/> Que l'anim vous anime !</p>
                     </div>
 
-                    <div class="w12">
+                    <div class="w12 wm100">
                         <a href="doc/CV_Vincent_Dubois_2024.pdf" class="cv-button" target="_blank">Voir mon CV</a>
                     </div>
                     
@@ -46,44 +68,44 @@
 
 
 
-        <div class="section dark">
+        <div id= "mes-competences" class="section dark">
             <div class="boxed text-center">
                 <h2>Mes compétences</h2>
-                <div class="flex gap20">
+                <div class="flex aligne-competences-mobil gap20 gap5-mobil">
 
-                    <div class="w14 competence">
+                    <div class="w14 wm32 competence">
                         <img class="img-competence" src="img/maya_logo.jpg"> 
-                        <h3 class="texte-logiciel">Maya</h3>
+                        <h3 class="texte-logiciel texte-logiciel-mobil">Maya</h3>
                     </div>
 
-                    <div class="w14 competence">
+                    <div class="w14 wm32 competence">
                         <img class="img-competence" src="img/blender_logo.png"> 
-                        <h3 class="texte-logiciel">Blender</h3>
+                        <h3 class="texte-logiciel texte-logiciel-mobil">Blender</h3>
                     </div>
 
-                    <div class="w14 competence">
+                    <div class="w14 wm32 competence">
                         <img class="img-competence" src="img/unity_logo.png"> 
-                        <h3 class="texte-logiciel">Unity</h3>
+                        <h3 class="texte-logiciel texte-logiciel-mobil">Unity</h3>
                     </div>
 
-                    <div class="w14 competence">
+                    <div class="w14 wm32 competence">
                         <img class="img-competence" src="img/photoshop_logo.png"> 
-                        <h3 class="texte-logiciel">Photoshop</h3>
+                        <h3 class="texte-logiciel texte-logiciel-mobil">Photoshop</h3>
                     </div>
 
-                    <div class="w14 competence">
+                    <div class="w14 wm32 competence">
                         <img class="img-competence" src="img/premierepro_logo.png"> 
-                        <h3 class="texte-logiciel">Premiere Pro</h3>
+                        <h3 class="texte-logiciel texte-logiciel-mobil">Premiere Pro</h3>
                     </div>
 
-                    <div class="w14 competence">
+                    <div class="w14 wm32 competence">
                         <img class="img-competence" src="img/aftereffect_logo.png"> 
-                        <h3 class="texte-logiciel">After Effect</h3>
+                        <h3 class="texte-logiciel texte-logiciel-mobil">After Effect</h3>
                     </div>
 
-                    <div class="w14 competence">
+                    <div class="w14 wm32 competence">
                         <img class="img-competence" src="img/animate_logo.png"> 
-                        <h3 class="texte-logiciel">Animate</h3>
+                        <h3 class="texte-logiciel texte-logiciel-mobil">Animate</h3>
                     </div>
 
                 </div>
@@ -92,12 +114,12 @@
 
 
 
-        <div class="section grey-uni">
+        <div id= "bande-demo" class="section grey-uni">
             <div class="boxed text-center">
                 <h2>Ma Bande Démo</h2>
-                <div class="gap20">
+                <div class="gap20 gap5-mobil">
                 
-                    <section class="video-container">
+                    <section class="video-container video-container-mobil">
                         <iframe src="https://player.vimeo.com/video/797053046"                                  
                         width="1280" height="720"
                         frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
@@ -114,46 +136,46 @@
         </div>
 
 
-        <div class="section">
+        <div id= "projets" class="section">
             <div class="boxed text-center">
                 <h2>Mes Projets</h2>
                 <div class="flex wrap gap20 space-between">
-                    <div class="w32 projet">
-                        <a href="pages/Plasmo.html" >
+                    <div class="w32 wm47 projet">
+                        <a href="pages/Plasmo.html">
                             <img src="img/affiche_plasmo.png">
                             <h3>Plasmo and Guardians</h3>
                         </a>
                     </div>
 
-                    <div class="w32 projet">
+                    <div class="w32 wm47 projet">
                         <a href="pages/LAppel.html">
                             <img src="img/affiche_appel.png">
                             <h3>L'Appel</h3>
                         </a>
                     </div>
                     
-                    <div class="w32 projet">
+                    <div class="w32 wm47 projet">
                         <a href="pages/UBBDR.html">
                             <img src="img/affiche_UBBDR.png">
                             <h3>UBBDR<br/>Un Bon Bol D'Air</h3>
                         </a>
                     </div>
 
-                    <div class="w32 projet">
+                    <div class="w32 wm47 projet">
                         <a href="pages/Recadre-toi.html">
                             <img src="img/affiche_recadre_toi.png">
                             <h3>Recadre toi</h3>
                         </a>
                     </div>
 
-                    <div class="w32 projet">
+                    <div class="w32 wm47 projet">
                         <a href="pages/Demerde-toi.html">
                             <img src="img/affiche_demerde_toi.png">
                             <h3>Demerde toi !</h3>
                         </a>
                     </div>
 
-                    <div class="w32 projet">
+                    <div class="w32 wm47 projet">
                         <a href="pages/Animations_Divers.html">
                             <img src="img/affiche_animes_divers.png">
                             <h3>Animations Divers</h3>
@@ -171,38 +193,38 @@
         <div class="section grey-uni">
             <div class="boxed text-center">
                 <h2>Parcours et Collaborations</h2>
-                <div class="flex gap50">
+                <div class="flex aligne-competences-mobil gap50 gap5-mobil toColumn">
 
-                    <div class="w12 parcours">
-                        <img class="img-parcours" src="img/std2a_logo.png"> 
+                    <div class="w12 wm100 parcours">
+                        <img class="img-parcours img-parcours-mobil" src="img/std2a_logo.png"> 
                     </div>
 
-                    <div class="w12 parcours">
-                        <img class="img-parcours" src="img/atelier_de_sevre_logo.png"> 
+                    <div class="w12 wm100 parcours">
+                        <img class="img-parcours img-parcours-mobil" src="img/atelier_de_sevre_logo.png"> 
                     </div>
 
-                    <div class="w12 parcours">
-                        <img class="img-parcours" src="img/waide_somme_logo.png"> 
+                    <div class="w12 wm100 parcours">
+                        <img class="img-parcours img-parcours-mobil" src="img/waide_somme_logo.png"> 
                     </div>
 
-                    <div class="w12 parcours">
-                        <img class="img-parcours" src="img/amiens_logo.png"> 
+                    <div class="w12 wm100 parcours">
+                        <img class="img-parcours img-parcours-mobil" src="img/amiens_logo.png"> 
                     </div>
 
-                    <div class="w12 parcours">
-                        <img class="img-parcours" src="img/amiens_metropole_logo.png"> 
+                    <div class="w12 wm100 parcours">
+                        <img class="img-parcours img-parcours-mobil" src="img/amiens_metropole_logo.png"> 
                     </div>
 
-                    <div class="w12 parcours">
-                        <img class="img-parcours" src="img/haut-de-france_logo.png"> 
+                    <div class="w12 wm100 parcours">
+                        <img class="img-parcours img-parcours-mobil" src="img/haut-de-france_logo.png"> 
                     </div>
 
-                    <div class="w12 parcours">
-                        <img class="img-parcours" src="img/2d3d_animations_logo.png"> 
+                    <div class="w12 wm100 parcours">
+                        <img class="img-parcours img-parcours-mobil" src="img/2d3d_animations_logo.png"> 
                     </div>
 
-                    <div class="w12 parcours">
-                        <img class="img-parcours" src="img/jo_paris_2024_logo.png"> 
+                    <div class="w12 wm100 parcours">
+                        <img class="img-parcours img-parcours-mobil" src="img/jo_paris_2024_logo.png"> 
                     </div>
 
                 </div>
@@ -211,43 +233,42 @@
 
 
 
-        <div class="section dark">
+        <div id= "contact" class="section dark">
             <div class="boxed text-center">
                 <h2>Contact</h2>
-                <div class="flex gap60 space-between">
-                    <div class="w20 contact">
+                <div class="flex gap60 toColumn space-between ">
+                    <div class="w20 wm100 contact">
                         <span class="material-symbols-outlined icon"> mail</span>
                         <span class="label">E-mail</span>
                         <span class="value">vincent.dubois80 <br/> @outlook.com</span>
                     </div>
 
-                    <div class="w20 contact">
+                    <div class="w20 wm100 contact">
                         <span class="material-symbols-outlined icon"> call</span>
                         <span class="label">Telephone</span>
                         <span class="value">06 46 62 27 76</span>
                     </div>
 
-                    <div class="w20 contact">
+                    <div class="w20 wm100 contact">
                         <img class="img-contact" src="img/linkedin_icon.png"> 
                         <span class="label">LinkedIn</span>
                         <a href="https://www.linkedin.com/in/vincent-dubois-a8a584263"  class="value">linkedin/vincent <br/> -dubois.com</a>
                     </div>
 
-                    <div class="w20 contact">
+                    <div class="w20 wm100 contact">
                         <img class="img-contact" src="img/instagram_icon.png"> 
                         <span class="label">Instagram</span>
                         <a href="https://www.instagram.com/viny_dub/"  class="value">viny_dub</a>
                     </div>
 
-                    <div class="w20 contact">
+                    <div class="w20 wm100 contact">
                         <img class="img-contact" src="img/Youtube_logo.png"> 
                         <span class="label">Youtube</span>
                         
-                        <div class="container-UBBDR gap20-equipe-UBBDR"> 
+                        <div class="container-UBBDR gap20-equipe-UBBDR mCenter"> 
                             <a href="https://www.youtube.com/@vincentdubois-animator"  class="lien-equipe_UBBDR text">Vincent Dubois Animator</a>
                         </div>
-                        <div class="container-UBBDR gap20-equipe-UBBDR"> 
-            
+                        <div class="container-UBBDR gap20-equipe-UBBDR mCenter"> 
                             <a href="https://www.youtube.com/@bandedefilmee"  class="lien-equipe_UBBDR text">Bande Défilmée</a>
                         </div>
                     </div>
@@ -261,9 +282,9 @@
             Ce site est codé par Vincent Dubois et hébergé par GitHub.com
         </footer>
 
-
+        <script src="js/app.js"></script>
     </body>
 
 
-    <script src="js/app.js"></script>
+    
 </html>

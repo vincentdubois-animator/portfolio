@@ -1,3 +1,4 @@
+
 const clickableImages = document.querySelectorAll('.clickableImage');
 const overlay = document.getElementById('overlay');
 const enlargedImage = document.getElementById('enlargedImage');
@@ -10,8 +11,35 @@ clickableImages.forEach(image => {
     });
 });
 
+
 // Cacher l'overlay quand on clique dessus
 overlay.addEventListener('click', () => {
     overlay.style.display = 'none';
 });
 
+
+
+function openMenu() {
+    const menu = document.querySelector(".header-menu");
+    menu.classList.toggle("active"); // Alterne la classe 'active'
+
+    if (menu.classList.contains("active")) {
+        menu.style.display = "flex"; // Affiche le menu
+        document.querySelector("header .material-symbols-outlined").innerHTML = "close";
+    } else {
+        menu.style.display = "none"; // Cache le menu
+        document.querySelector("header .material-symbols-outlined").innerHTML = "menu";
+    }
+}
+
+    // Fermer le menu quand un lien est cliqué
+    document.querySelectorAll('.header-menu a').forEach(link => {
+        link.addEventListener('click', (event) => {
+            const menu = document.querySelector(".header-menu");
+            if (menu.classList.contains("active")) {
+                menu.classList.remove("active");
+                menu.style.display = "none"; // Cache le menu
+                document.querySelector("header .material-symbols-outlined").innerHTML = "menu"; // Change l'icône
+            }
+        });
+    });

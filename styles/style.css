@@ -10,6 +10,59 @@
 
 body{
     font-family: "Inter", sans-serif;
+    overflow-x: hidden;     /*Cache les bords de la page*/
+}
+
+
+
+
+/* //////////////////           CLASSES DE MA PAGE D'ACCEUIL            ////////////// */
+
+.aligncenter{
+    align-items: center;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background: #000000;
+    z-index: 999;
+    padding-block:10px;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 7);
+}
+
+.header-logo{
+    display: block;
+}
+
+.header-logo img{
+    width: 150px;
+}
+
+.header-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header-menu li a{
+    text-decoration: none;
+    color :#ffffff;
+    padding:10px 20px;
+    display: block;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+}
+
+.header-menu li a:hover{     /*Quand on passe sur le menu */
+    background-color: #8d1600;
+    color:#000000;
+}
+
+.header-menu-mobile{
+    display: none;
 }
 
 
@@ -90,7 +143,7 @@ p{
 
 .grey-uni{
     color:#ffffff;
-    background: #424242;
+    background: #313131;
 }
 
 .grey{
@@ -151,7 +204,7 @@ p{
     text-align:center;
 }
 
-.space-between{
+.space-between{            /*Ecarte 2 éléments au maximum dans une div "flex"  */
     justify-content: space-between;
 }
 
@@ -193,7 +246,7 @@ p{
 
 /* Style du bouton */
 .cv-button {
-    background-color: #ad0000; /* Couleur de fond verte */
+    background-color: #8d1600; /* Couleur de fond*/
     border: none; /* Pas de bordure */
     color: white; /* Couleur du texte */
     padding: 15px 32px; /* Espacement interne */
@@ -253,18 +306,19 @@ p{
     color: #fff;          /*Couleur du block = blanc*/
 }
 
-.projet img{                    /*Image du Block Projet*/
+.projet img{                                      /*Image du Block Projet*/
     width:100%;
     height:100%;
     object-fit: cover;
     filter: brightness(90%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);   /* Ombre légère sous chaque image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);     /* Ombre légère sous chaque image */
     transition:.4s ease;                          /*Transition de l'opacité = 0.4sec*/
+    border-radius: 8px;                           /*Bord des encadrements sont arrondis*/
 }
 
 .projet:hover img{             /*Quand on survolage l'image du projet avec la souris*/
     filter:brightness(30%);    /*L'opacité de l'image revient à 60%, l'image s'éclaircit*/
-    cursor: pointer; /* Changer le curseur quand survolé */
+    cursor: pointer;           /* Changer le curseur quand survolé */
 }
 
 .projet:hover h3{            /*Quand on survolage le texte du projet avec la souris*/
@@ -272,8 +326,8 @@ p{
 }
 
 .parcours{
-    border-radius:15px;    /*Arrondissement des coins de fond*/
-    box-sizing: border-box; /*Recentre l'icône dans le fond*/ 
+    border-radius:15px;      /*Arrondissement des coins de fond*/
+    box-sizing: border-box;  /*Recentre l'icône dans le fond*/ 
 }   
 
 .img-parcours{     
@@ -327,7 +381,7 @@ p{
 
 
 
-/*////////////         CLASSE DE MES PAGES "PROJETS      //////////////////////////////*/
+/*////////////         CLASSES DE MES PAGES "PROJETS      //////////////////////////////*/
 
 
 
@@ -410,7 +464,7 @@ p{
     margin-top: 20px;
 }
 
-.images-graphiques img{                    /*Image du Block Projet*/
+.images-graphiques img{       /*Image du Block Projet*/
     width:100%;
     height:100%;
     object-fit: cover;
@@ -496,7 +550,7 @@ p{
     text-decoration: none;
 }
 
-.container-UBBDR{
+.text-container-UBBDR{
     display: flex; /* Activer le mode flexbox */
     justify-content: left; /* Aligner les éléments horizontalement */  
 }
@@ -514,6 +568,7 @@ p{
     height:auto;                       /*L'image occupe 100% de la Hauteur de la page*/
     object-fit: cover;                 /*L'image rempli proportionnelement la largeur de la page*/
     filter:brightness(40%);            /*% de l'opacité de l'image d'arrière fond*/
+    margin-top: 70px;
 }
 
 /*Pour agrandir les images lorsqu'on clic dessus*/
@@ -546,4 +601,298 @@ p{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/* //////////////////           CLASSES DU RESPONSIVE DE MON SITE           ////////////// */
+
+
+
+
+
+
+
+
+
+@media(max-width:810px){
+    
+    header{
+        height: 60px !important;
+    }
+
+
+    .header-menu-mobil{
+        display: block;
+        border: 0px;
+        background-color: #000000;
+        color: white;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 991;
+    }
+
+    .header-logo{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        z-index: 991;
+
+    }
+
+    .header-menu{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:30px;
+        background: #000;
+        display:none;
+
+    }
+
+    .active{
+        display: block;
+    }
+
+    .header-menu li a{
+        margin-top: 10px;
+    }
+    
+
+    p{
+        font-size: 1rem;
+        text-wrap: balance;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:1.7rem;
+        margin-bottom: 30px;
+    }
+
+    .gap5-mobil{            /*Espacement en pixel entre les éléments dans la section*/
+        gap:5px;
+        margin-top: 50px;
+    }
+
+    .gap20-mobil{            /*Espacement en pixel entre les éléments dans la section*/
+        gap:20px;
+    }
+
+    .slider{
+        height:60vh;
+    }
+
+    .slider-content{
+        width: 90%;
+    }
+
+    .slider-content p{
+        margin-top: 20px;
+        font-size: 1.5rem;
+        text-wrap:balance;
+    }
+
+    .slider-background-Animes-Divers-mobil{
+        width:100%;                        /*L'image occupe 100% de la Largeur de la page*/
+        height:80%;                       /*L'image occupe 100% de la Hauteur de la page*/
+        object-fit: cover;                 /*L'image rempli proportionnelement la largeur de la page*/
+        filter:brightness(40%);            /*% de l'opacité de l'image d'arrière fond*/
+
+    }
+
+    .img-profile{   /*Ma photo de profile*/        
+        width: 250px; 
+        height: auto;  /* garde le ratio d'aspect */
+        margin-top: -60px; 
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .cv-button{
+        margin-top: 50px;
+        transform: translate(-20%, 0%); 
+    }
+
+    .img-competence{   /*Les images icônes des logiciels*/        
+        width: 50px; 
+        height: auto;  /* garde le ratio d'aspect */
+    }
+
+    .aligne-competences-mobil{
+        position: relative;
+        flex-wrap: wrap; 
+    }
+
+    .texte-logiciel-mobil{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .toColumn{
+        flex-direction: column;
+    }
+
+    .mCenter{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .wm32{
+        width: 32% !important;
+    }
+
+    .wm47{
+        width: 47%;
+    }
+
+    .wm100{
+        width: 100% !important;
+    }
+
+    
+    .section{
+        padding:50px 0;
+    }
+
+    .boxed{
+        max-width: 90%;
+    }
+
+    .video-container-mobil {
+        position: relative;
+        padding-bottom: 75%; /* Ratio d'aspect 16:9 (hauteur/largeur = 9/16 = 0.5625) */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    .video-container-mobil iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0; /* Optionnel, si tu veux supprimer les bordures */
+    }
+
+    .img-parcours-mobil{
+        width: auto; 
+        height: 90px;
+        margin-bottom: 30px;
+    }
+
+    .Titre-Projet-mobil{
+        color: #ffffff;   /*Couleur du Titre */
+        font-size:3rem;     /*Taille du Titre */
+        margin-top: 20px;
+        margin-bottom: 50px; /*ajout d'une bordue de 20 pixel en dessou du Titre */
+        letter-spacing: 1px;
+        margin-left: 100px;
+        
+    }
+
+    
+    .Resume-Projet-mobil{
+        color: #ffffff;   /*Couleur du Titre h1*/
+        font-size:1rem;   /*Taille du paragraphe p = 1.5*/
+        line-height:1.5em;  /*Espacement entre les lignes du paragraphe p = 1.5*/
+        letter-spacing: 1px;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+  
+    .Details-Projet-mobil{
+        color: #ffffff;   /*Couleur du Titre h1*/
+        font-size:1rem;   /*Taille du paragraphe p = 1.5*/
+        line-height:2em;  /*Espacement entre les lignes du paragraphe p = 1.5*/
+        letter-spacing: 1px;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+   
+    .mt-gallery-mobil{
+        margin-top: 60px;
+    }
+
+    .mb-entete-mobil{
+        margin-bottom: 300px;
+    }
+
+    .text-catégories-concepts-mobil{   /*Texte des catégories de concept*/
+        color: #ffffff;       /*Couleur du Titre h1*/
+        font-size:1.5rem;        /*Taille du paragraphe p = 1.5*/
+        line-height:1.5em;       /*Espacement entre les lignes du paragraphe p = 1.5*/
+        letter-spacing: 2px;
+        text-align:center;  
+    }
+
+    .gallery-mobil {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes par défaut */
+        gap: 10px; /* Espace entre les images */
+        padding: 10px;
+    }
+
+    .Titre-Projet-mobil-UBBDR{
+        color: #ffffff;   /*Couleur du Titre */
+        font-size:3rem;     /*Taille du Titre */
+        margin-top: 70px;
+        margin-bottom: 20px; /*ajout d'une bordue de 20 pixel en dessou du Titre */
+        letter-spacing: 1px;
+        margin-left: 100px;
+        
+    }
+
+    .Resume-Projet-mobil-UBBDR{
+        color: #ffffff;   /*Couleur du Titre h1*/
+        font-size:0.8rem;   /*Taille du paragraphe p = 1.5*/
+        line-height:1.5em;  /*Espacement entre les lignes du paragraphe p = 1.5*/
+        letter-spacing: 1px;
+        margin-left: 110px;
+        margin-top: 30px;
+    }
+
+    .Details-Projet-mobil-UBBDR{
+        color: #ffffff;   /*Couleur du Titre h1*/
+        font-size:0.8rem;   /*Taille du paragraphe p = 1.5*/
+        line-height:1.5em;  /*Espacement entre les lignes du paragraphe p = 1.5*/
+        letter-spacing: 1px;
+        margin-left: 110px;
+        margin-top: 30px;
+    }
+
+    .photo-equipe-mobil-UBBDR{   /*Ma photo de profile*/        
+        width: 200px; 
+        height: auto;      /* garde le ratio d'aspect */
+        margin-top: 80px;
+    }
+
+    .lien-equipe_mobil-UBBDR{           /*Paramettre du text */
+        display: block;
+        font-size: 0.8rem;
+        margin-top: 20px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+}
 
