@@ -3,6 +3,10 @@ const clickableImages = document.querySelectorAll('.clickableImage');
 const overlay = document.getElementById('overlay');
 const enlargedImage = document.getElementById('enlargedImage');
 
+const enlargedVideo = document.getElementById('enlargedVideo');
+const videoSource = document.getElementById('videoSource');
+
+
 // Ajouter un event listener à chaque image cliquable
 clickableImages.forEach(image => {
     image.addEventListener('click', () => {
@@ -16,6 +20,37 @@ clickableImages.forEach(image => {
 overlay.addEventListener('click', () => {
     overlay.style.display = 'none';
 });
+
+
+
+
+
+
+
+
+//Pour Afficher une vidéo quand on clique sur une image
+// Ajouter un event listener à chaque image cliquable
+clickableImages.forEach(image => {
+    image.parentElement.addEventListener('click', () => {
+        const videoUrl = image.parentElement.getAttribute('data-video');
+        videoSource.src = videoUrl;
+        enlargedVideo.load(); // Charger la nouvelle source
+        overlay.style.display = 'flex';
+    });
+});
+
+// Cacher l'overlay quand on clique dessus
+overlay.addEventListener('click', () => {
+    overlay.style.display = 'none';
+    enlargedVideo.pause(); // Pause la vidéo quand on ferme l'overlay
+    videoSource.src = ''; // Réinitialiser la source pour éviter de recharger la vidéo
+});
+
+
+
+
+
+
 
 
 

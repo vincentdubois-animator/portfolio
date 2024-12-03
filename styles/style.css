@@ -604,7 +604,10 @@ p{
 
 
 
-
+video {
+    width: 100%; /* Prendre toute la largeur du conteneur */
+    border-radius: 8px; /* Ajout de coins arrondis au lecteur vidéo */
+}
 
 
 
