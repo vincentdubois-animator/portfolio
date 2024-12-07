@@ -17,9 +17,13 @@ clickableImages.forEach(image => {
 
 
 // Cacher l'overlay quand on clique dessus
-overlay.addEventListener('click', () => {
-    overlay.style.display = 'none';
-});
+if (overlay) {
+    overlay.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    });
+} else {
+    console.error("L'élément avec l'ID 'overlay' est introuvable.");
+}
 
 
 
@@ -97,3 +101,26 @@ function closeMenu() {
     //         }
     //     });
     // });
+
+
+
+    const clickableImagesYoutube = document.querySelectorAll('.clickableImageYoutube');
+    const overlayYoutube = document.getElementById('overlayYoutube');
+    const youtubePlayer = document.getElementById('youtubePlayer');
+    
+    // Au clic sur une image, afficher la vidéo YouTube correspondante dans l'overlay
+    clickableImagesYoutube.forEach(image => {
+        image.addEventListener('click', () => {
+            const videoUrl = image.getAttribute('data-video-url');
+            youtubePlayer.src = videoUrl;
+            overlayYoutube.style.display = 'flex';
+        });
+    });
+    
+    // Fermer l'overlay lorsqu'on clique dessus
+    overlayYoutube.addEventListener('click', () => {
+        overlayYoutube.style.display = 'none';
+        youtubePlayer.src = ""; // Vider la source de l'iframe pour arrêter la vidéo
+    });
+    
+    
