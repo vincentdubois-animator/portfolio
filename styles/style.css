@@ -72,7 +72,7 @@ header{
     aspect-ratio:16/8;         /*Ratio de la Slide*/
     background:#000;         /*Couleur de la Slide*/
     position:relative;         /*Position relative de la Slide par rapport à la dimension de la fenêtre de la page Web*/
-    top: -40px;                /*Decaller le block vers le haut de la page*/
+    /*top: -40px;                /*Decaller le block vers le haut de la page*/ */
 }
 
 .slider-background{             /*L'image*/
