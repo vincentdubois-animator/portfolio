@@ -14,8 +14,6 @@ body{
 }
 
 
-
-
 /* //////////////////           CLASSES DE MA PAGE D'ACCEUIL            ////////////// */
 
 .aligncenter{
@@ -72,7 +70,7 @@ header{
     aspect-ratio:16/8;         /*Ratio de la Slide*/
     background:#000;         /*Couleur de la Slide*/
     position:relative;         /*Position relative de la Slide par rapport à la dimension de la fenêtre de la page Web*/
-    /*top: -40px;                /*Decaller le block vers le haut de la page*/ */
+    
 }
 
 .slider-background{             /*L'image*/
@@ -146,31 +144,6 @@ p{
     background: #313131;
 }
 
-.grey{
-    color:#fff;
-    background: linear-gradient(to right, #000000, #424242, #838383, #838383, #424242, #000000); /* Dégradé noir sur les côtés et rouge au milieu */
-}
-
-.blue{
-    color:#fff;
-    background: linear-gradient(to right, #000000, #284091,rgb(62, 105, 197), #284091, #000000); /* Dégradé noir sur les côtés et couleur au milieu */
-}
-
-.orange{
-
-    color:#fff;
-    background: linear-gradient(to right, #000000, #742d20, #742d20, #000000); /* Dégradé noir sur les côtés et rouge au milieu */
-}
-
-.vert{
-    background:#414d3b;
-    color:#fff;
-    background: linear-gradient(to right, #000000, #414d3b,#828b69, #414d3b, #000000); /* Dégradé noir sur les côtés et couleur au milieu */
-}
-.turquoise{
-    color:#fff;
-    background: linear-gradient(to right, #000000, #0f745a,#1fb48f, #0f745a, #000000); /* Dégradé noir sur les côtés et couleur au milieu */
-}
 
 .w12{
     width:12.5%;     /*La somme par laquelle est divisé 100% de la largeur de la page*/
@@ -218,17 +191,27 @@ p{
     margin-top: 100px;
 }
 
-.gap50{
+.gap30{            /*Espacement en pixel entre les éléments dans la section*/
+    gap:30px;
+    margin-top: 120px;
+}
+
+
+.gap50{            /*Espacement en pixel entre les éléments dans la section*/
     gap:50px;
     margin-top: 150px;
 }
 
-.gap60{
+.gap60{            /*Espacement en pixel entre les éléments dans la section*/
     gap: 60px;
 }
 
-.gap100{
+.gap100{            /*Espacement en pixel entre les éléments dans la section*/
     gap: 100px;
+}
+
+.marginbottom300{
+    margin-bottom: 300px;
 }
 
 .wrap{
@@ -439,24 +422,24 @@ p{
 
 
 .Titre-Projet{
-    color: #ffffff;   /*Couleur du Titre */
-    font-size:5rem;     /*Taille du Titre */
-    margin-bottom: 50px; /*ajout d'une bordue de 20 pixel en dessou du Titre */
-    letter-spacing: 2px;
+    color: #ffffff;     /*Couleur du Titre */
+    font-size:5rem;       /*Taille du Titre */
+    margin-bottom: 50px;  /*ajout d'une bordue de 20 pixel en dessou du Titre */
+    letter-spacing: 2px;  /*espacement entre les lettres*/
 }
 
 .Resume-Projet{
-    color: #ffffff;   /*Couleur du Titre h1*/
-    font-size:1.2rem;   /*Taille du paragraphe p = 1.5*/
-    line-height:1.5em;  /*Espacement entre les lignes du paragraphe p = 1.5*/
-    letter-spacing: 2px;
+    color: #ffffff;    /*Couleur*/
+    font-size:1.2rem;    /*Taille du paragraphe p = 1.5*/
+    line-height:1.5em;   /*Espacement entre les lignes du paragraphe p = 1.5*/
+    letter-spacing: 2px; /*espacement entre les lettres*/
 }
 
 .Details-Projet{
-    color: #ffffff;   /*Couleur du Titre h1*/
-    font-size:1rem;   /*Taille du paragraphe p = 1.5*/
-    line-height:2.5em;  /*Espacement entre les lignes du paragraphe p = 1.5*/
-    letter-spacing: 2px;
+    color: #ffffff;    /*Couleur*/
+    font-size:0.8rem;      /*Taille du paragraphe p = 1.5*/
+    line-height:2em;     /*Espacement entre les lignes du paragraphe p = 1.5*/
+    letter-spacing: 2px; /*espacement entre les lettres*/
 }
 
 .gap10{            /*Espacement en pixel entre les éléments dans la section*/
@@ -468,6 +451,39 @@ p{
     width:100%;
     height:100%;
     object-fit: cover;
+}
+
+/* Couleurs dégradé du fond */
+.white-degrade{
+
+    color:#000000;  /* forcer tout les textes à être en noir */
+    background: linear-gradient(to right, #000000, #ffffff, #ffffff, #000000); /* Dégradé noir sur les côtés et rouge au milieu */
+}
+
+.grey{
+    color:#fff;
+    background: linear-gradient(to right, #000000, #424242, #838383, #838383, #424242, #000000); /* Dégradé noir sur les côtés et rouge au milieu */
+}
+
+.blue{
+    color:#fff;
+    background: linear-gradient(to right, #000000, #284091,rgb(62, 105, 197), #284091, #000000); /* Dégradé noir sur les côtés et couleur au milieu */
+}
+
+.orange{
+
+    color:#fff;
+    background: linear-gradient(to right, #000000, #742d20, #742d20, #000000); /* Dégradé noir sur les côtés et rouge au milieu */
+}
+
+.vert{
+    background:#414d3b;
+    color:#fff;
+    background: linear-gradient(to right, #000000, #414d3b,#828b69, #414d3b, #000000); /* Dégradé noir sur les côtés et couleur au milieu */
+}
+.turquoise{
+    color:#fff;
+    background: linear-gradient(to right, #000000, #0f745a,#1fb48f, #0f745a, #000000); /* Dégradé noir sur les côtés et couleur au milieu */
 }
 
 
@@ -611,7 +627,7 @@ p{
 
 
 
-/* //////////////////           CLASSES DU RESPONSIVE DE MON SITE           ////////////// */
+/* //////////////////           CLASSES DU RESPONSIVE DE MON SITE  POUR MOBIL         ////////////// */
 
 
 
@@ -712,7 +728,7 @@ p{
 
     .slider-background-Animes-Divers-mobil{
         width:100%;                        /*L'image occupe 100% de la Largeur de la page*/
-        height:80%;                       /*L'image occupe 100% de la Hauteur de la page*/
+        height:70%;                       /*L'image occupe 100% de la Hauteur de la page*/
         object-fit: cover;                 /*L'image rempli proportionnelement la largeur de la page*/
         filter:brightness(40%);            /*% de l'opacité de l'image d'arrière fond*/
 
@@ -827,7 +843,7 @@ p{
   
     .Details-Projet-mobil{
         color: #ffffff;   /*Couleur du Titre h1*/
-        font-size:1rem;   /*Taille du paragraphe p = 1.5*/
+        font-size:0.8rem;   /*Taille du paragraphe p = 1.5*/
         line-height:2em;  /*Espacement entre les lignes du paragraphe p = 1.5*/
         letter-spacing: 1px;
         margin-left: 100px;
